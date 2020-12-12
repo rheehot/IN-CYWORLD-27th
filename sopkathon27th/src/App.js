@@ -178,7 +178,6 @@ function App() {
             <Route exact path='/result' render={(props)=>(<ResultPage props={props} onResetAns={onResetAns} object={object}/>)}></Route>
           }
           <Route exact path='/question/:idx' render={(props)=>(<QuestionPage onAnswerSubmit={onAnswerSubmit} onAnsHandler={onAnsHandler} question={question}/>)}></Route>
-          <Route path='/*'>404 NOT FOUND</Route>
         </Switch>
     </Router>
   );
