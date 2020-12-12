@@ -174,9 +174,9 @@ function App() {
     <Router>
         <Switch>
         <Route exact path='/' render={(props)=>(<LandingPage onBirthHandler={onBirthHandler} props={props}/>)}></Route>
-          { object.levelNum &&
+          //{ object.levelNum &&
             <Route exact path='/result' render={(props)=>(<ResultPage props={props} onResetAns={onResetAns} object={object}/>)}></Route>
-          }
+          //}
           <Route exact path='/question/:idx' render={(props)=>(<QuestionPage onAnswerSubmit={onAnswerSubmit} onAnsHandler={onAnsHandler} question={question}/>)}></Route>
         </Switch>
     </Router>
